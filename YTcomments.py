@@ -7,7 +7,7 @@ vid = input("Video ID: ")
 token = None
 comments = []
 youtube = build('youtube', 'v3', developerKey=DevKey)
-for i in range(10):
+for i in range(15):
     response = youtube.commentThreads().list(
         part="snippet",
         videoId= vid,
